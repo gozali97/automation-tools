@@ -1,0 +1,35 @@
+{
+  "name": "website-testing-automation",
+  "version": "1.0.0",
+  "description": "Automated website testing tool for functional, responsive, performance, and accessibility testing",
+  "main": "index.js",
+  "bin": {
+    "website-tester": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node ./src/cli.js",
+    "test": "node ./src/cli.js test",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "testing",
+    "automation",
+    "website",
+    "accessibility",
+    "performance",
+    "responsive"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "axe-core": "^4.7.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.1.1",
+    "puppeteer": "^21.5.0"
+  }
+}
